@@ -1,0 +1,33 @@
+#banner {
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../../../assets/images/header/Banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .welcome{
+    margin-top: 10%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+  }
+  .welcome p {
+    color: rgb(255, 255, 255);
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    text-align: center;
+  
+  }
+  .welcome h2  {
+    color: rgb(255, 255, 255);
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .welcome h2 span {
+    font-size: clamp(1rem, 5vw, 3.5rem);
+    color: rgba(26, 181, 153);
+  }

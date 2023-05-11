@@ -1,0 +1,21 @@
+/*.copyright-menu ul {
+    text-align: right;
+    margin: 0; }
+  
+  .copyright-menu li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.copyright-menu li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+span{
+    color: rgba(255, 255, 255, 0.8);
+}*/
+
+/*.border-top{
+    border-bottom: 1px solid #ADB9D3 !important;
+}*/

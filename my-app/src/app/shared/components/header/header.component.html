@@ -1,0 +1,447 @@
+
+<div class="container-fluid bg-dark mx-auto"><!--<div class="container-fluid">: crea un contenedor de ancho completo para contener el elemento de navegación.-->
+        <nav class="navbar navbar-toggleable-md"><!--<nav class="navbar navbar-toggleable-md ">: crea una barra de navegación y la hace colapsable para pantallas más pequeñas.-->
+          <a href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+            <img src="../../../assets/images/header/Icono.ArgentinaPrograma.png" class="d-inline-block align-top" alt="Argentina Programa">
+          </a>
+            <div class="redes justify-content-end"><!--<div class="redes justify-content-end">: crea un contenedor para los íconos de las redes sociales y los alinea a la derecha.-->
+              <a href="#" aria-label="Linkedin" target="_blank"><i class="bi bi-linkedin"></i></a><!-- <a href="#" aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>: crea un enlace a una página interna y agrega un ícono de LinkedIn. El atributo "aria-label" proporciona una etiqueta para la accesibilidad.-->
+              <a href="#" aria-label="GitHub" target="_blank"><i class="bi bi-github"></i></a>
+              <button type="submit" target="_blank" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged"> Login </button>
+              <button type="submit" target="_blank" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged"> Cerrar Sesión </button>
+
+              
+            </div>
+            
+        </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="navbar-container">-->
+
+  <!--Barra principal-->
+<!--
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <div class= "container-fluid ">
+      <a class="navbar-brand " target="_blank" href="https://argentinaprograma.inti.gob.ar/">
+          <img src="../../../assets/images/header/Icono.ArgentinaPrograma.png" alt="Argentina Programa">
+      </a>
+      <div class="navbar-nav d-flex justify-content-center align-items-center">
+          <div class="redes d-flex justify-content-end"  >
+            <div class="col-md-0">
+              <a href="#" target="_blank"aria-label="Linkedin "><i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+            <div class="col-md-0">
+              <a href="#" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="col-md-0">
+              <a href="#" target="_blank" class="btn btn-outline-light mr-3">Login</a>
+                <button class="navbar-toggler .d-none .d-sm-block .d-md-none" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon "></span>
+                </button>
+            </div>
+          </div>
+
+      </div>
+  </div>
+  </nav>-->
+
+  <!--Barra secundaria-->
+<!--
+  <nav class="navbar navbar-expand-md navbar-secondary">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav bd-highlight">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home" onclick="seleccionar(this)">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#acercade" onclick="seleccionar(this)">ACERCA DE MI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#educacion" onclick="seleccionar(this)">EDUCACION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiencia" onclick="seleccionar(this)">EXPERIENCIA</a>
+                </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#habilidades" onclick="seleccionar(this)">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</div>
+-->  
+
+
+<!--Baner -->
+<!--
+<div class="banner d-flex justify-content-center align-items-center bg-light" 
+        style="background-image: linear-gradient(rgba(117, 41, 138, 0.95),rgba(26, 181, 153, 0.95)),
+          url('../../../assets/images/header/banner.jpg'); height: 100vh; background-size: cover; padding-bottom: 50px; position: relative;">
+    <div class="container-fluid text-center" style=" position: absolute; bottom: 0;">
+        <p class="bienvenida">Bienvenidos!</p>
+        <h2>Los invito a recorrer
+            <span>mi Portfolio</span>
+        </h2>
+        <a href="#" class="btn btn-outline-light">Haz tu propio portfolio!</a>
+    </div>
+</div>
+-->
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--<ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonios">Testimonios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>-->
+
+<!--<div class="banner d-flex justify-content-center align-items-center" 
+    style="background-image: linear-gradient (rgba(26, 181, 153, 0.5), rgba(117, 41, 138, 0.5)), 
+      url('../../../assets/images/header/banner.jpg'); height: 100vh; background-size: cover;">
+        <div class="presentacion text-center">
+            <p class="bienvenida">Bienvenidos</p>
+              <h2>Soy <span>Lucas Perez</span>, Desarrollador Web</h2>
+              <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, </p>
+            <a href="#portfolio" class="btn btn-primary">Haz tu propio portfolio!</a>
+        </div>
+</div>-->
+
+<!-- Seccion Hero -->
+<!--<section class="hero align-items-stretch">
+  <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+    <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/imagenes-desarrolladores/desarrollador-ejemplo.svg" alt="Foto de Jane Doe">
+    <h1>Hola, soy Jane Doe</h1>
+    <h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>
+  </div>
+  <div class="hero-inferior">
+    <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+  </div>
+</section>-->
+
+
+
+
+
+
+
+
+
+
+<!--
+<section id="init">
+<header>
+  <nav class="navbar navbar-toggleable-md container">
+    <a href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+      <img src="../../../assets/images/header/Icono.ArgentinaPrograma.png" class="d-inline-block align-top" alt="Argentina Programa">
+    </a>
+      <div class="redes justify-content-end">
+        <a href="#" aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      </div>
+  </nav>
+  
+  Barra secundaria
+<div class ="container-fluid">
+  <nav class="navbar navbar-expand-md">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto navbar-secondary">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home" onclick="seleccionar(this)">HOME</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#acercade" onclick="seleccionar(this)">ACERCA DE MI</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#educacion" onclick="seleccionar(this)">EDUCACION</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#experiencia" onclick="seleccionar(this)">EXPERIENCIA</a>
+          </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#habilidades" onclick="seleccionar(this)">SKILLS</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a>
+          </li>
+    </ul>
+</div>
+</nav>
+</div>-->
+<!---->
+
+    <!--<nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav navbar-secondary">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home" onclick="seleccionar(this)">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#acercade" onclick="seleccionar(this)">ACERCA DE MI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#educacion" onclick="seleccionar(this)">EDUCACION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experiencia" onclick="seleccionar(this)">EXPERIENCIA</a>
+                </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#habilidades" onclick="seleccionar(this)">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+</section>-->
+
+
+
+
+
+
+<!--<section id="inicio">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+        <img class="img-fluid" src="../../../assets/images/header/Icono.ArgentinaPrograma.png" alt="Argentina Programa">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="redes">
+          <a href="#" aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid p-0">
+    <div class="image-wrapper">
+      <img class="d-flex" src="../../../assets/images/header/banner.jpg" alt="Banner">
+      <div class="text-center presentacion">
+        <p class="bienvenida">Bienvenidos</p>
+        <h2>Soy <span>Lucas Perez</span>, Desarrollador Web</h2>
+        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, </p>
+        <a href="#" class="btn btn-primary mt-4">Ver Portafolio</a>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+
+
+
+<!--<section id="inicio">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+        <img class="img-fluid" src="../../../assets/images/header/Icono.ArgentinaPrograma.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="redes">
+          <a href="#" ><i class="bi bi-linkedin"></i></a>
+          <a href="#" ><i class="bi bi-github"></i></a>
+      
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="presentacion text-center my-5">
+    <p class="bienvenida">Bienvenidos</p>
+    <h2>Soy <span>Lucas Perez</span>, Desarrollador Web</h2>
+    <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, </p>
+    <a href="#portfolio" class="btn btn-primary">Ir a Portafolio</a>
+  </div>
+  <div class="menu-container">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Educación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Experiencia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Proyectos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Habilidades</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+-->
+
+
+
+
+
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+  <div class="container-fluid">
+  <div class="navbar-header">
+  <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+    <img class="img-icon-arg-pro"src="../../../assets/images/header/Icono.ArgentinaPrograma.png">
+  </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+    <div class="d-flex align-items-center">
+      <div class="redes">
+        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <img src="https://via.placeholder.com/50x50" class="mr-3" alt="Logo 1">
+      <img src="https://via.placeholder.com/50x50" class="mr-3" alt="Logo 2">
+      <img src="https://via.placeholder.com/50x50" alt="Logo 3">
+    </div>
+  </div>
+  </div>
+  </div>
+</nav>-->
+
+
+
+
+
+<!--
+<section id="inicio">
+  <div class="contenido">
+    <header>
+      <div class="contenido-header">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="mx-2" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+                <img class="img-icon-arg-pro"src="../../../assets/images/header/Icono.ArgentinaPrograma.png">
+              </a>
+            </div>
+            <div class="redes">
+              <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a class="mx-2" href="#" target="_blank"><img style="max-width: 2rem; max-height: 2rem;" src={{imgLinkedin}}></a>
+              <a class="mx-2" href="#" target="_blank"><img style="max-width: 2rem; max-height: 2rem;" src={{imgTwitter}}></a>
+              <a class="mx-2" href="#" target="_blank"><img style="max-width: 2rem; max-height: 2rem;" src={{imgInstagram}}></a>
+              <a class="mx-2" href="#" target="_blank"><img style="max-width: 2rem; max-height: 2rem;" src={{imgGithub}}></a>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-danger navbar-btn login-btn" (click)="login()">Log In</button>                                                                                                           
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="card container p-0 mt-2 position-relative">
+        <div class="card-body p-0">
+          <img class="rounded" src="../../../assets/images/header/Banner.png">
+          <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <p class="bienvenida">Bienvenidos</p>
+            <h2>Soy <span>Lucas Perez</span>, Desarrollador Web</h2>
+            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, </p>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</section>
+-->
+
+  <!--<section id="inicio">
+    <div class="contenido">
+       <header>
+           <div class="contenido-header">
+             <h1>/LP/</h1>
+              <nav id="nav" class="">
+                <ul id="links">
+                   <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                   <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                   <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                   <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                   <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                </ul>
+              </nav>
+                                                                                                
+  Icono del menu responsive 
+    <div id="icono-nav" onclick="responsiveMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+     
+    <div class="redes">
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+    </div>
+      </div>
+        </header>
+          <div class="presentacion">
+            <p class="bienvenida">Bienvenidos</p>
+            <h2>Soy <span>Lucas Perez</span>, Desarrollador Web</h2>
+            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, </p>
+            <a href="#portfolio">Ir a Portafolio</a>
+          </div>
+      </div>
+  </section>-->

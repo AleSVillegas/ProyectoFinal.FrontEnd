@@ -1,0 +1,36 @@
+  .d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .card-container {
+    max-width: 500px;
+  }
+
+  .card-header {
+    background-color: rgba(140, 146, 172);
+    color: #fff;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .card-body h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .card-body p {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-body img {
+    max-width: 6rem;
+    max-height: 4rem;
+  }
+  
