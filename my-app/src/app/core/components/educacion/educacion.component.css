@@ -1,3 +1,15 @@
+  
+  #fondo-edu {
+    background: linear-gradient( rgba(39, 64, 157, 0.9), rgba(85, 85, 85, 0.95)), url("../../../../assets/images/educacion/Educacion.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    background-position: center center;
+    text-align: center;
+  }
+
+  
   .d-flex-center {
     display: flex;
     align-items: center;
@@ -9,11 +21,28 @@
     max-width: 500px;
   }
 
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 2px solid rgb(255 255 255 / 13%);
+    border-radius: 0.25rem;
+}
+
   .card-header {
-    background-color: rgba(140, 146, 172);
-    color: #fff;
+    background-color: transparent;
+   
   }
-  
+
+  .card-header h4 {
+    color:rgba(192, 192, 192, 1);
+    
+  }
+
   .card-body {
     padding: 2rem;
   }
@@ -34,3 +63,12 @@
     max-height: 4rem;
   }
   
+  .text-primary {
+    color: #ffffff!important;
+  }
+  
+  .btn-light {
+    color: #fb0000;
+    background-color: transparent;
+    border-color: transparent;
+  }

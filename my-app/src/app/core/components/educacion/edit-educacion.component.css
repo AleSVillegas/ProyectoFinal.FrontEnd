@@ -1,0 +1,19 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.row {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+}
