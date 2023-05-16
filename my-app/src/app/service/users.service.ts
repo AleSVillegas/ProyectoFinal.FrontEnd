@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Users } from '../model/users.model';
+import { environment } from 'src/environments/environment.prod';
 
 
 @Injectable({
@@ -10,11 +11,11 @@ import { Users } from '../model/users.model';
 })
 export class UsersService {
 
-  URL: String = "http://localhost:8080/usuarios/";
+  url: string = environment.apiURL + 'usuarios/';
 
   constructor(private http: HttpClient) { }
 
   public getUser(): Observable<Users> {
-    return this.http.get<Users>(this.URL+ 'registrados/perfil');
+    return this.http.get<Users>(this.url+ 'registrados/perfil');
   }
 } 
