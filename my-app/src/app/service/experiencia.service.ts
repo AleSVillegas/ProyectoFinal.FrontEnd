@@ -9,12 +9,10 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 
-  url: string = environment.apiURL + 'skill/';
-/*<<<<<<< HEAD
-  expURL = 'https://backend-mgb.herokuapp.com/explab/';
-=======
+  url: string = environment.URL + 'explab/';
+/*
   URL = environment.URL + 'explab/';
->>>>>>> dbccedd5c18384aa757cbb7ab7d9f7f3bc0e7672*/
+*/
 
   constructor(private httpClient: HttpClient) { }
 
