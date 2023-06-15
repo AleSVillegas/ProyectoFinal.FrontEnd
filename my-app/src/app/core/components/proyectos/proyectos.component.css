@@ -41,7 +41,6 @@
   object-fit: cover;
   transition: .5s;
   max-height: 270px;
- 
 
 }
 
@@ -57,12 +56,12 @@
 
 .proyecto h5:hover {
     color: rgb(255, 255, 255);
-  }
+}
 
 .proyecto a{
     color: aqua;
     
-  }  
+}  
 
 .proyecto .info {
   position: absolute;
