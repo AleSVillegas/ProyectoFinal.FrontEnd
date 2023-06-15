@@ -28,6 +28,7 @@
     "ng-circle-progress": "^1.6.0",
     "ngx-bootstrap": "^8.0.0",
     "popper.js": "^1.16.1",
+    "rxfire": "^6.0.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

@@ -40,20 +40,29 @@
   filter: grayscale(1);
   object-fit: cover;
   transition: .5s;
+  max-height: 270px;
+ 
+
 }
 
 .proyecto:hover img {
   filter: grayscale(0);
 }
 
-.proyecto h4 {
+.proyecto h5 {
     cursor: pointer;
     text-decoration: underline;
+    
+}
+
+.proyecto h5:hover {
+    color: rgb(255, 255, 255);
   }
 
-  .proyecto h4:hover {
-    color: blue;
-  }
+.proyecto a{
+    color: aqua;
+    
+  }  
 
 .proyecto .info {
   position: absolute;
@@ -71,3 +80,14 @@
   opacity: 1;
   bottom: 0;
 }
+
+.modal-body p {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.modal-title{
+  color: #ff5080;
+}
+
