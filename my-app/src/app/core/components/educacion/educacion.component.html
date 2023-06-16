@@ -1,4 +1,29 @@
-<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh" id="fondo-edu">
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh" id="fondo-edu" *ngIf="!isLogged">
+    <div class="card container mt-2 px-0 mb-3">
+        <div class="card-header text-center">
+            <h4 class="mb-0">
+                Estudios Universitarios
+            </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-xs-4 col-lg-2 d-flex align-items-center justify-content-center">
+                    <a href="https://uprosanluis.edu.ar/" target="_blank"><img src={{imgUpro}} style="max-width: 6rem; max-height: 4rem;"></a>
+                </div>
+                <div class="col-xs-8 col-lg-10 d-flex align-items-center">
+                    <div>
+                        <h5 class="mb-4">Universidad Provincial de Oficios "Eva Perón"</h5>
+                        <p class="mb-1">Técnico en Robótica</p>
+                        <p class="mb-1">Especialización "Inteligencia Artificial"</p>
+                        <p class="mb-0">2020 - 2022</p>
+                    </div>
+                </div>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh" id="fondo-edu"*ngIf="isLogged">
     <div class="card container mt-2 px-0 mb-3">
         <div class="card-header text-center">
             <h4 class="mb-0">

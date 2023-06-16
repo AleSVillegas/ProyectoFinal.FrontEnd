@@ -62,7 +62,11 @@
     max-width: 6rem;
     max-height: 4rem;
   }
-
+  
+  .underline {
+    text-decoration: underline;
+  }
+  
   .text-primary {
     color: #ffffff !important;
   }
