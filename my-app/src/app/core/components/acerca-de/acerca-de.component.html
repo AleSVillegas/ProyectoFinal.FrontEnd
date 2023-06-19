@@ -22,7 +22,7 @@
 <div id="sobremi" class="py-5" *ngIf="isLogged">
   <div class="container-fluid d-flex flex-wrap justify-content-center align-items-center px-lg-0">
       <div class="contenedor-foto col-lg-4 col-md-6 col-12 mb-4 mx-auto">
-          <img [src]="imgPerfil" alt="" class="img-fluid rounded">
+          <img src={{ user.img }} alt="" class="img-fluid rounded">
       </div>
       <div class="sobremi col-lg-8 col-md-6 col-12 mb-4 mx-auto">
           <h4 class="titulo-seccion mb-0">Sobre Mi

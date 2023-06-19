@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute,Router } from '@angular/router';
 import { Users } from 'src/app/model/users.model';
+import { ImageService } from 'src/app/service/image.service';
 import { UsersService } from 'src/app/service/users.service';
 
 @Component({
@@ -14,7 +15,9 @@ user: Users= null;
   constructor(
     private usersService: UsersService,
     private activatedRouter : ActivatedRoute,
-    private router: Router
+    private router: Router,
+    public imageService: ImageService
+    
   ) { }
 
   ngOnInit(): void {
@@ -41,7 +44,8 @@ user: Users= null;
     )
   }
 
-  uploadImage($event:any) {
+  onFileSelected($event:any) {
+    this.imageService.onFileSelected($event)
   }
 
 }
