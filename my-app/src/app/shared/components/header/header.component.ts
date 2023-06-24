@@ -20,6 +20,9 @@ export class HeaderComponent implements OnInit {
   onLogOut():void{
     this.tokenService.logOut();
     this.checkLoggedIn();
+    this.router.navigate(['home']).then(() => {
+      window.location.reload(); // Actualizar la página
+    });  
   }
 
   login(){

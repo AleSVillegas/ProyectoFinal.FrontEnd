@@ -8,13 +8,24 @@
       .row {
         background-color: lightblue ;
         border: 1px solid #ccc;
-        padding: 20px;
+        padding: 2px;
       }
       .form-group {
-        margin-bottom: 20px;
+        margin-bottom: 2px;
       }
       
       .btn {
         padding: 10px 20px;
         font-size: 16px;
+      }
+      
+      .image-container {
+        max-width: 100%;
+        overflow: hidden;
+      }
+      
+      .selected-image {
+        display: block;
+        max-width: 10%;
+        height: auto;
       }

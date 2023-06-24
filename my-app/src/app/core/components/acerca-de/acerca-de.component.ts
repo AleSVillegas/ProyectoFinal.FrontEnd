@@ -10,13 +10,12 @@ import { UsersService } from 'src/app/service/users.service';
 })
 
 export class AcercaDeComponent implements OnInit {
-  public imgPerfil: string = "../../../../assets/images/acerca-de/Perfil.png";
+  public imgPerfil: string = "../../../../assets/images/acerca-de/Foto_Perfil.jpg";
   
   //user: Users = new Users("", "", "", "");
   user: Users =null;
 
   constructor(public usersService: UsersService, private tokenService: TokenService) { }
-
   isLogged=false;
   
   ngOnInit(): void {

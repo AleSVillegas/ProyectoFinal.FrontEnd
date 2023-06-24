@@ -1,3 +1,4 @@
+<!-- Código para mostrar cuando el usuario no está logueado -->
 <div class="d-flex justify-content-center align-items-center" style="min-height: 80vh" id="fondo-edu" *ngIf="!isLogged">
     <div class="card container mt-2 px-0 mb-3">
         <div class="card-header text-center">
@@ -8,7 +9,9 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-xs-4 col-lg-2 d-flex align-items-center justify-content-center">
-                    <a href="https://uprosanluis.edu.ar/" target="_blank"><img src={{imgUpro}} style="max-width: 6rem; max-height: 4rem;"></a>
+                    <a href="https://uprosanluis.edu.ar/" target="_blank">
+                        <img [src]="imgUpro" style="max-width: 6rem; max-height: 4rem;">
+                    </a>
                 </div>
                 <div class="col-xs-8 col-lg-10 d-flex align-items-center">
                     <div>
@@ -18,49 +21,49 @@
                         <p class="mb-0">2020 - 2022</p>
                     </div>
                 </div>
+            </div>
             <hr>
         </div>
     </div>
 </div>
 
-<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh" id="fondo-edu"*ngIf="isLogged">
+<!-- Código para mostrar cuando el usuario está logueado -->
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh" id="fondo-edu" *ngIf="isLogged">
     <div class="card container mt-2 px-0 mb-3">
         <div class="card-header text-center">
             <h4 class="mb-0">
                 Estudios Universitarios
-                <button class="btn btn-light btn-icon mr-auto" routerLink="/nuevaedu" *ngIf="isLogged">
+                <button class="btn btn-light btn-icon mr-auto" routerLink="/nuevaedu">
                     <i class="bi bi-plus-circle text-primary" ngbTooltip="Agregar Educacion"></i>
                 </button>
             </h4>
         </div>
         <div class="card-body">
             <div class="row">
-                <div class="col-xs-4 col-lg-2 d-flex align-items-center justify-content-center">
-                    <a href="https://uprosanluis.edu.ar/" target="_blank">
-                        <img src={{imgUpro}} style="max-width: 6rem; max-height: 4rem;"></a>
-                </div>
-                <div class="col-xs-8 col-lg-10 d-flex align-items-center">
-                    <tbody>
-                        <tr *ngFor="let Educacion of educacion">
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <h5 class="mr-2">
-                                        {{Educacion.nombreE}}                                                        
-                                        <button class="btn btn-light mr-2" routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged">
-                                            <i class="bi bi-pencil-fill" ngbTooltip="Editar Educacion"></i>
-                                        </button>
-                                        <button class="btn btn-light" (click)="delete(Educacion.id)" *ngIf="isLogged">
-                                            <i class="bi bi-trash-fill" ngbTooltip="Eliminar Educacion"></i>
-                                        </button>                                    
-                                    </h5>
-                                </div>
-                                <p>{{Educacion.descripcionE}}</p>
+               <div class="col-lg-12">
+                    <div class="d-flex align-items-center justify-content-center flex-column">
+                        <table>
+                        <tbody>
+                            <tr *ngFor="let Educacion of educacion">
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="mr-2">
+                                            {{Educacion.nombreE}}                                                        
+                                            <button class="btn btn-light mr-2" routerLink="/editedu/{{Educacion.id}}">
+                                                <i class="bi bi-pencil-fill" ngbTooltip="Editar Educacion"></i>
+                                            </button>
+                                            <button class="btn btn-light" (click)="delete(Educacion.id)">
+                                                <i class="bi bi-trash-fill" ngbTooltip="Eliminar Educacion"></i>
+                                            </button>                                    
+                                        </h5>
+                                    </div>
+                                    <p>{{Educacion.descripcionE}}</p>                                           
                                 <hr>
                             </td>
                         </tr>
                     </tbody>
-                </div>
-            </div>
+                </table>
+               </div>
         </div>
     </div>
 </div>

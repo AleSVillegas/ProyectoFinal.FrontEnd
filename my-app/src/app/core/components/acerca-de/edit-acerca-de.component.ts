@@ -34,6 +34,7 @@ user: Users= null;
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
+    this.user.img = this.imageService.url
     this.usersService.update(id, this.user).subscribe(
       data => {
         history.back(); // Regresar a la página anterior
@@ -45,7 +46,9 @@ user: Users= null;
   }
 
   onFileSelected($event:any) {
-    this.imageService.onFileSelected($event)
+    const id = this.activatedRouter.snapshot.params['id'];
+    const name = 'perfil_' + id;
+    this.imageService.onFileSelected($event, name)
   }
 
 }
