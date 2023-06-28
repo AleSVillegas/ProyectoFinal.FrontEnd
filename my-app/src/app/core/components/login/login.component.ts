@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginUsuario } from 'src/app/model/login-usuario';
 import { AuthService } from 'src/app/service/auth.service';
@@ -17,7 +17,10 @@ export class LoginComponent implements OnInit {
   nombreUsuario!: string;
   password!: string;
   roles: string[] = [];
-  errMsj!: string; 
+  errMsj!: string;
+  showInvalidCredentialsError = false; // Nueva variable para controlar la visibilidad del mensaje de error 
+
+  @ViewChild('passwordInput') passwordInput: ElementRef<HTMLInputElement>;
 
   constructor(private tokenService: TokenService, private authService: AuthService, private router: Router) { }
 
@@ -39,6 +42,7 @@ export class LoginComponent implements OnInit {
       this.isLogged = false;
       this.isLogginFail = true;
       this.errMsj = err.error.mensaje; 
+      this.showInvalidCredentialsError = true; // Mostrar mensaje de error
       console.log(this.errMsj);
     });
   }
@@ -47,6 +51,17 @@ export class LoginComponent implements OnInit {
     this.isLogged = this.tokenService.isLoggedIn();
     this.isLogginFail = false;
     this.roles = this.tokenService.getAuthorities();
+  }
+
+  togglePasswordVisibility() {
+    const passwordInputType = this.passwordInput.nativeElement.type;
+
+    // Cambia el tipo de entrada de contraseña entre 'password' y 'text'
+    if (passwordInputType === 'password') {
+      this.passwordInput.nativeElement.type = 'text';
+    } else {
+      this.passwordInput.nativeElement.type = 'password';
+    }
   }
 }
 
